@@ -7,14 +7,18 @@ XREF: Entity Linking for Chinese News Comments with Supplementary Article Refere
 Xinyu Hua, Lei Li, Lifeng Hua, and Lu Wang. AKBC 2020
 ```
 
-## Data (todo)
+## Data
 
-Link to data:
+coming soon
 
 
-## Environment (todo)
+## Environment
 
-## Code (todo)
+coming soon
+
+## Code
+
+coming soon
 
 ## License
 
