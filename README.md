@@ -14,11 +14,38 @@ coming soon
 
 ## Environment
 
-coming soon
+- python 3.7
+- pytorch 1.5
+- pytorch-lightning 0.8
 
-## Code
 
-coming soon
+## Training
+
+The following script will train XRef model for 10 epochs with batch size 32. It will dump checkpoints every 1 epoch, with the top 5 ones (base on validation loss) saved.
+
+```shell script
+python train.py --domain=[ent,product] \
+    --ckpt-dir=model/demo/ \
+    --batch-size=32 \
+    --model=xref \
+    --tensorboard-dir=demo \
+    --save-interval=1 \
+    --save-topk=5 \
+    --max-train-epochs=10
+```
+
+## Inference
+
+The following script loads the latest checkpoint from `--ckpt-dir` and run inference over the test set. The results will be saved to `--output-path`.
+
+```shell script
+python infer.py --domain=[ent,product] \
+    --output-path=demo.jsonl \
+    --ckpt-dir=model/demo/ \
+```
+
+
+
 
 ## License
 
