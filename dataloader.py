@@ -136,8 +136,6 @@ class ToutiaoEntityLinkingDataset(Dataset):
                                         instance_id, (ment['text'], ment['span']))
                         self.instances.append(cur_instance)
 
-            # DEBUG
-            if len(self.instances) >= 100:break
 
         print('{} instances loaded in {:.2f} seconds'.format(len(self.instances), time.time() - t0))
         print('pos vs. neg = 1 vs. {:.2f}'.format((len(self.instances) - pos_labels)/pos_labels))
