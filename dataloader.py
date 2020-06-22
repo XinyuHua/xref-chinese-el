@@ -8,7 +8,8 @@ from torch.utils.data import Dataset
 
 np.random.seed(0)
 
-DATA_PATH = "/data/model/xinyu/akbc2020_release/to_release/"
+DATA_PATH = './data/'
+
 
 class ToutiaoEntityLinkingDataset(Dataset):
 

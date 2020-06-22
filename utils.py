@@ -5,7 +5,7 @@ import torch
 import math
 import numpy as np
 
-DATA_PATH = '/data/model/xinyu/akbc2020_release/to_release/'
+DATA_PATH = './data/'
 
 def collate_tokens(values, pad_idx):
     """Convert a list of 1d tensors into a padded 2d tensor."""
@@ -51,10 +51,6 @@ def apply_to_sample(f, sample):
         elif isinstance(x, dict):
             r = {key: _apply(value) for key, value in x.items()}
             return r
-            # return {
-            #     key: _apply(value)
-            #     for key, value in x.items()
-            # }
         elif isinstance(x, list):
             return [_apply(x) for x in x]
         else:
