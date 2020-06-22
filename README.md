@@ -21,7 +21,7 @@ coming soon
 
 ## Training
 
-The following script will train XRef model for 10 epochs with batch size 32. It will dump checkpoints every 1 epoch, with the top 5 ones (base on validation loss) saved.
+The following script will train XRef model for 10 epochs with batch size 32. It will dump checkpoints every 1 epoch, with the top 5 ones (base on validation loss) saved. (we assume the data is stored under `./data/`.)
 
 ```shell script
 python train.py --domain=[ent,product] \
