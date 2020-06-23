@@ -9,7 +9,7 @@ Xinyu Hua, Lei Li, Lifeng Hua, and Lu Wang. AKBC 2020
 
 ## Data
 
-coming soon
+[link](https://drive.google.com/file/d/12soBT90mJjT5NxRMmaVFIiKFrWmUQ9nl/view?usp=sharing)
 
 
 ## Environment
